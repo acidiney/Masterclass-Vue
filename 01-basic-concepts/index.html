@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <app-header></app-header>
+    <app-create-todo v-on:add-todo="addTodo"></app-create-todo>
+    <app-list-todos v-bind:todos="todos" v-on:remove-todo="removeTodo" ></app-list-todos>
+  </div>
+
+  <script src="vue.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
